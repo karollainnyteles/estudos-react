@@ -62,3 +62,51 @@
   align-items: center;
   justify-content: center;
 }
+
+.challengActive main strong{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--title);
+  margin: 1.5rem 0 1rem;
+}
+
+.challengActive main p{
+  line-height: 1.5;
+}
+
+.challengActive footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.challengActive footer button{
+  height: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:0;
+  border-radius: 5px;
+
+  color: var(--white);
+
+  font-size: 1rem;
+  font-weight: 600;
+  
+  transition: filter 0.2s;
+}
+
+.challengActive footer button.challengFailedButton{
+  background: var(--red);
+}
+
+.challengActive footer button.challengSucceededButton{
+  background: var(--green);
+}
+
+.challengActive footer button:hover{
+  filter: brightness(0.9);
+}
+
